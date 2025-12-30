@@ -1,6 +1,97 @@
 {
-    "version": 0,
+    "version": 1,
     "name": "New Actions",
-    "maps": [],
-    "controlSchemes": []
+    "maps": [
+        {
+            "name": "Gameplay",
+            "id": "1578d0c8-559a-4591-b257-fb0304d74611",
+            "actions": [
+                {
+                    "name": "SwitchView",
+                    "type": "Button",
+                    "id": "ca063cb4-ee9d-45cf-9c60-f81e484f3dc6",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "82b58593-00ca-4cd1-9efe-8d123873a8c4",
+                    "path": "<XRController>{RightHand}/triggerPressed",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": ";XR",
+                    "action": "SwitchView",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "96a144a2-63ef-442d-8e37-5b5b9c6b502f",
+                    "path": "<Keyboard>/space",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": ";keyboard",
+                    "action": "SwitchView",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        },
+        {
+            "name": "UI",
+            "id": "4f2b8b4b-d5c3-43b6-a8b3-4e9bf7eba357",
+            "actions": [
+                {
+                    "name": "New action",
+                    "type": "Button",
+                    "id": "5fbff582-dbc6-413f-9bf8-77480665ff60",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "73f3222e-227b-4c33-9586-f0094fb3ccd7",
+                    "path": "",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "New action",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        }
+    ],
+    "controlSchemes": [
+        {
+            "name": "XR",
+            "bindingGroup": "XR",
+            "devices": [
+                {
+                    "devicePath": "<XRController>",
+                    "isOptional": false,
+                    "isOR": false
+                }
+            ]
+        },
+        {
+            "name": "keyboard",
+            "bindingGroup": "keyboard",
+            "devices": [
+                {
+                    "devicePath": "<Keyboard>",
+                    "isOptional": false,
+                    "isOR": false
+                }
+            ]
+        }
+    ]
 }
